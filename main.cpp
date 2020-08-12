@@ -7,6 +7,8 @@ struct Node
     int data;
     Node*next=0;
 };
+
+//Function to release memory consumed by matrices
 void Delete(int ** A,int r,int c)
 {
     for(int i=0;i<r;i++)
@@ -41,7 +43,7 @@ int main()
 
 
     /////Storing matrix 1
-    Node**a=new Node*[r]{0};
+    Node**a=new Node*[r]{0}; //a is an array of Node pointers
 
     for(int i=0;i<r;i++)
     {Node*p;
@@ -69,7 +71,7 @@ int main()
     }
 
      /////Storing matrix 2
-    Node**b=new Node*[r]{0};
+    Node**b=new Node*[r]{0}; //b is an array of Node pointers
 
     for(int i=0;i<r;i++)
     {Node*p;
